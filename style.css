@@ -1,35 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
-    color: #333;
-    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    background: black;
+    color: #00ff00;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    color: #fff;
+    font-size: 20px;
+    color: #ff0000;
+    text-shadow: 2px 2px #ffff00;
+    margin-bottom: 20px;
 }
 
 .project {
-    background: #fff;
+    background: black;
+    border: 4px dashed #00ffff;
     margin: 20px auto;
-    padding: 15px;
+    padding: 20px;
     max-width: 600px;
     border-radius: 10px;
+    animation: rainbow-border 5s linear infinite;
+}
+
+.project h2 {
+    font-size: 16px;
+    color: #ff00ff;
+    margin-bottom: 10px;
 }
 
 .project img, .project video {
     width: 100%;
+    border: 2px solid #ffff00;
     border-radius: 5px;
+    margin: 10px 0;
 }
 
 a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
-    background: #ff6f61;
-    color: white;
+    background: #0000ff;
+    color: #fff;
     text-decoration: none;
-    border-radius: 20px;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+}
+
+a:hover {
+    background: #ff00ff;
+    border-color: #0000ff;
+}
+
+p {
+    font-size: 10px;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+@keyframes rainbow-border {
+    0% { border-color: #ff0000; }
+    25% { border-color: #ffff00; }
+    50% { border-color: #00ff00; }
+    75% { border-color: #0000ff; }
+    100% { border-color: #ff00ff; }
 }
