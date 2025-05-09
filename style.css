@@ -2,12 +2,13 @@
 
 body {
     font-family: 'Press Start 2P', monospace;
-    background: black;
+    background: purple;
     color: #00ff00;
     margin: 0;
     padding: 20px;
     text-align: center;
 }
+
 
 h1 {
     font-size: 20px;
